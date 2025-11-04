@@ -1,0 +1,84 @@
+name: cropxplore
+description: "A new Flutter project."
+publish_to: "none"
+version: 0.6.5+5
+
+environment:
+  sdk: ^3.7.2
+
+dependencies:
+  flutter:
+    sdk: flutter
+  cupertino_icons: ^1.0.8
+  omni_datetime_picker: ^2.1.1
+  intl: ^0.20.2
+  flutter_map: ^6.1.0
+  geolocator: ^14.0.0
+  latlong2: ^0.9.0
+  bloc: ^9.0.0
+  flutter_bloc: ^9.1.1
+  http: ^1.2.1
+  shimmer: ^3.0.0
+  shared_preferences: ^2.5.3
+  flutter_secure_storage: ^9.2.4
+  drop_down_list: ^2.0.0
+  fluttertoast: ^8.2.12
+  cached_network_image: ^3.4.1
+  icons_plus: ^5.0.0
+  gap: ^3.0.1
+  firebase_analytics: ^11.5.2
+  firebase_core: ^3.15.1
+  equatable: ^2.0.5
+  firebase_database: ^11.3.10
+  geocoding: ^4.0.0
+  url_launcher: ^6.3.2
+  flutter_html: ^3.0.0-beta.2
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^5.0.0
+  flutter_launcher_icons: ^0.14.4
+  flutter_native_splash: ^2.4.6
+
+flutter:
+  uses-material-design: true
+
+  assets:
+    - assets/images/
+    - assets/icons/
+    - assets/service-images/
+    - assets/service_images/
+    - assets/commodities.json
+    - assets/states-and-districts.json
+
+flutter_launcher_icons:
+  android: "launcher_icon"
+  ios: true
+  image_path: "assets/images/CX_icon.png"
+  min_sdk_android: 21 # android min sdk min:16, default 21
+
+flutter_native_splash:
+  background_image: "assets/images/splash_background.png"
+
+  image: "assets/images/CX_splash_icon.png"
+
+  image_dark: "assets/images/CX_splash_icon.png"
+
+  # Android 12+
+  android_12:
+    image: "assets/images/CX_splash_icon.png"
+    color: "#009688"
+    image_dark: "assets/images/CX_splash_icon.png"
+    color_dark: "#009688"
+
+  # Center the image
+  android_gravity: center
+  ios_content_mode: center
+  web_image_mode: center
+
+  # Keep splash in portrait mode
+  android_screen_orientation: portrait
+
+  # Make splash fullscreen
+  fullscreen: true
